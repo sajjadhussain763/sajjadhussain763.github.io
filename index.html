@@ -79,21 +79,26 @@
 
         <!-- About Section -->
         <section id="about" class="about-section">
-            <h2 class="section-title"><span class="title-accent">01.</span> About Protocol</h2>
+            <h2 class="section-title"><span class="title-accent">01.</span> Executive Summary</h2>
             <div class="about-container glass-panel">
                 <div class="about-text">
                     <p>
-                        I am a dedicated <strong>IT Systems & Security Engineer</strong> with a strong foundation in
-                        both system administration and modern cybersecurity practices.
-                        My journey bridges the gap between building robust infrastructures and defending them against
-                        emerging threats.
+                        I am a strategic <strong>Cybersecurity Analyst & IT Systems Engineer</strong> focused on
+                        proactive threat hunting,
+                        incident response, and securing mission-critical operational environments. My expertise lies in
+                        architecting defense-in-depth
+                        strategies, mitigating advanced persistent threats (APTs), and hardening enterprise systems
+                        against sophisticated cyber attacks.
                     </p>
                     <p>
-                        From deploying automated server solutions with Linux and Puppet to monitoring SOC environments
-                        utilizing Splunk and performing deep packet inspection with Wireshark, I thrive in environments
-                        where performance and security intersect.
-                        I hold a Master's in Information and Communication Engineering from TU Wien and carry
-                        industry-recognized certifications like CompTIA Security+.
+                        Operating at the intersection of SOC monitoring and Infrastructure automation, I leverage tools
+                        like Splunk (SIEM),
+                        Wireshark (Deep Packet Inspection), and industry-standard vulnerability scanners (Nmap, Nessus)
+                        to provide actionable
+                        threat intelligence. Holding a Master's degree in Information and Communication Engineering,
+                        alongside CompTIA Security+,
+                        ISO 27001, and NIST CSF certifications, I translate complex security compliance into automated,
+                        scalable operational workflows.
                     </p>
                 </div>
                 <div class="about-stats">
@@ -111,64 +116,113 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <h2 class="section-title"><span class="title-accent">02.</span> Core Competencies</h2>
-            <div class="skills-grid">
+        <!-- Interactive Domains Section -->
+        <section id="specializations" class="skills-section">
+            <h2 class="section-title"><span class="title-accent">02.</span> Operational Domains</h2>
 
-                <div class="skill-category glass-panel hover-3d">
-                    <div class="skill-header">
-                        <i class="fab fa-docker"></i>
-                        <h3>DevOps & Cloud</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>CI/CD Pipelines (GitLab, Jenkins)</li>
-                        <li>Containerization (Docker, Kubernetes)</li>
-                        <li>Cloud Platforms (AWS / Azure)</li>
-                        <li>Infrastructure as Code Basics</li>
-                        <li>Linux Server Management</li>
-                    </ul>
+            <div class="tabs-container glass-panel">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="tab-soc"><i class="fas fa-shield-virus"></i> SOC & Threat
+                        Intel</button>
+                    <button class="tab-btn" data-tab="tab-devops"><i class="fas fa-network-wired"></i> DevOps &
+                        Cloud</button>
+                    <button class="tab-btn" data-tab="tab-auto"><i class="fas fa-bolt"></i> Automation</button>
+                    <button class="tab-btn" data-tab="tab-arch"><i class="fas fa-server"></i> Architecture</button>
                 </div>
 
-                <div class="skill-category glass-panel hover-3d">
-                    <div class="skill-header">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Workflow Automation</h3>
+                <div class="tab-content-area">
+                    <!-- Tab 1: SOC -->
+                    <div class="tab-pane active" id="tab-soc">
+                        <div class="domain-info">
+                            <h3><i class="fas fa-magnifying-glass-chart"></i> Security Operations Center</h3>
+                            <p>Proactive monitoring, deep packet inspection, and rapid incident response.</p>
+                            <ul class="skill-list compact mt">
+                                <li>SIEM (Splunk, ELK) & Log Aggregation</li>
+                                <li>Vulnerability Scanning (Nmap, Nessus, OpenVAS)</li>
+                                <li>Web App Security (Burp Suite, OWASP ZAP)</li>
+                                <li>Deep Packet Inspection (Wireshark)</li>
+                            </ul>
+                        </div>
+                        <div class="domain-visual">
+                            <!-- SOC Diagram -->
+                            <div class="soc-diagram">
+                                <div class="sys-node sys-logs"><i class="fas fa-file-lines"></i><span>Raw Logs</span>
+                                </div>
+                                <div class="data-stream warn"></div>
+                                <div class="sys-node sys-siem pulse-red"><i class="fas fa-filter"></i><span>SIEM
+                                        (Splunk)</span></div>
+                                <div class="data-stream alert"></div>
+                                <div class="sys-node sys-triage"><i class="fas fa-user-shield"></i><span>Analyst
+                                        Triage</span></div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="skill-list">
-                        <li>n8n Automation Engineering</li>
-                        <li>Event-Driven API Integrations</li>
-                        <li>Custom Shell/Bash Scripting</li>
-                        <li>Python Automation Modules</li>
-                        <li>Puppet Server Automation</li>
-                    </ul>
-                </div>
 
-                <div class="skill-category glass-panel hover-3d">
-                    <div class="skill-header">
-                        <i class="fas fa-shield-cat"></i>
-                        <h3>DevSecOps & Threat Intel</h3>
+                    <!-- Tab 2: DevOps -->
+                    <div class="tab-pane" id="tab-devops">
+                        <div class="domain-info">
+                            <h3><i class="fab fa-docker"></i> Cloud & DevOps Infrastructure</h3>
+                            <p>Designing scalable, containerized architectures with integrated CI/CD pipelines.</p>
+                            <ul class="skill-list compact mt">
+                                <li>CI/CD Pipelines (GitLab, GitHub Actions)</li>
+                                <li>Containerization & Orchestration (Docker, K8s)</li>
+                                <li>Cloud Providers (AWS IAM, EC2, S3)</li>
+                                <li>Infrastructure as Code principles</li>
+                            </ul>
+                        </div>
+                        <div class="domain-visual">
+                            <!-- DevOps Diagram -->
+                            <div class="devops-diagram">
+                                <div class="sys-node"><i class="fab fa-git-alt"></i><span>Commit</span></div>
+                                <div class="data-stream ok"></div>
+                                <div class="sys-node sys-build"><i class="fas fa-hammer"></i><span>Build / Test</span>
+                                </div>
+                                <div class="data-stream ok"></div>
+                                <div class="sys-node sys-deploy pulse-green"><i class="fab fa-aws"></i><span>Deploy
+                                        AWS</span></div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="skill-list">
-                        <li>SIEM & Log Analysis (Splunk, ELK)</li>
-                        <li>Vulnerability Scanning (Nmap, Nessus)</li>
-                        <li>Deep Packet Inspection (Wireshark)</li>
-                        <li>Web Security Testing (Burp, ZAP)</li>
-                        <li>Firewall Configuration (Fortinet)</li>
-                    </ul>
-                </div>
 
-                <div class="skill-category glass-panel hover-3d">
-                    <div class="skill-header">
-                        <i class="fas fa-scale-balanced"></i>
-                        <h3>Frameworks & Architecture</h3>
+                    <!-- Tab 3: Automation -->
+                    <div class="tab-pane" id="tab-auto">
+                        <div class="domain-info">
+                            <h3><i class="fas fa-robot"></i> Advanced Workflow Automation</h3>
+                            <p>Building event-driven logic to bridge security alerts and IT operations.</p>
+                            <ul class="skill-list compact mt">
+                                <li>n8n Visual Automation Engineering</li>
+                                <li>Python & Bash Scripting for SysAdmin</li>
+                                <li>Puppet Server Automation</li>
+                                <li>Custom API Integrations & Webhooks</li>
+                            </ul>
+                        </div>
+                        <div class="domain-visual">
+                            <div class="sys-node"><i class="fas fa-code"></i><span>Script</span></div>
+                            <div class="data-stream ok"></div>
+                            <div class="sys-node sys-action"><i class="fas fa-cogs"></i><span>Automate</span></div>
+                        </div>
                     </div>
-                    <ul class="skill-list">
-                        <li>Windows Server Environment (AD, GPO)</li>
-                        <li>Microsoft 365 Administration</li>
-                        <li>ISO 27001 Implementation</li>
-                        <li>NIST Cybersecurity Framework</li>
-                    </ul>
+
+                    <!-- Tab 4: Architecture -->
+                    <div class="tab-pane" id="tab-arch">
+                        <div class="domain-info">
+                            <h3><i class="fas fa-sitemap"></i> Enterprise Architecture & Compliance</h3>
+                            <p>Hardening traditional corporate environments and ensuring regulatory compliance.</p>
+                            <ul class="skill-list compact mt">
+                                <li>Windows Server Environments (AD, DNS, GPO)</li>
+                                <li>Linux Server Administration & Remediation</li>
+                                <li>Fortinet / FortiGate Firewall Policies</li>
+                                <li>ISO 27001 & NIST CSF Frameworks</li>
+                            </ul>
+                        </div>
+                        <div class="domain-visual arch-grid">
+                            <i class="fab fa-windows"></i>
+                            <i class="fab fa-linux"></i>
+                            <i class="fas fa-fire-burner"></i>
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
